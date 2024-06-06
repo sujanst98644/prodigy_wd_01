@@ -19,16 +19,16 @@ function App() {
     <main className="flex flex-col font-sora text-white bg-[#EEF7FF]">
         <header className={`grid lg:grid-cols-3 items-center bg-green-700  pl-8 transition-colors duration-300 ${
           Scrolled ? "bg-white text-black" : ""} fixed top-0 left-0 w-full`}>
-          <div className="flex flex-row items-center font-sora font-bold">
+          <div className="flex flex-row items-center">
             <img src="Burger.png" alt="logo" className="h-14" />
-            Chrunchy
+            <p className="font-bold hover:scale-110">Chrunchy</p>
           </div>
           <div className="font-sora col-start-3 justify-end">
             <ul className="flex flex-row space-x-10 ">
-              <a href="#Home">Menu</a>
-              <a href="#blogs">Order</a>
-              <a href="#pages">Packs</a>
-              <a href="#services">services</a>
+              <a href="#Home" className="hover:underline hover:text-orange-200">Menu</a>
+              <a href="#blogs" className="hover:underline hover:text-orange-200">Order</a>
+              <a href="#pages" className="hover:underline hover:text-orange-200">Packs</a>
+              <a href="#services" className="hover:underline hover:text-orange-200">services</a>
             </ul>
           </div>
         </header>
